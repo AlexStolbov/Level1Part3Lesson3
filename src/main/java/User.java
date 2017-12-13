@@ -29,6 +29,14 @@ public class User implements Comparable {
     }
 
     /**
+     * Getter
+     * @return name of the user
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
      * Compare users by age.
      * @param o - another user.
      * @return value.
@@ -37,5 +45,13 @@ public class User implements Comparable {
     public int compareTo(Object o) {
         User u2 = (User) o;
         return this.getAge().compareTo(u2.getAge());
+    }
+
+    @Override
+    public String toString() {
+        return "User{"
+                + "age=" + age
+                + ", name='" + name + '\''
+                + '}';
     }
 }
