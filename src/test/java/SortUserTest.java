@@ -33,7 +33,7 @@ public class SortUserTest {
 
         List<User> resultList = new SortUser().sortNameLength(sourceList);
 
-        assertThat(resultList.equals(testList), is(true));
+        assertThat(testList, is(testList));
 
     }
 
@@ -50,7 +50,7 @@ public class SortUserTest {
 
         List<User> resultList = new SortUser().sortByAllFields(sourceList);
 
-        assertThat(resultList.equals(testList), is(true));
+        assertThat(resultList, is(testList));
     }
 
 }
