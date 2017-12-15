@@ -33,7 +33,7 @@ public class SortUserTest {
 
         List<User> resultList = new SortUser().sortNameLength(sourceList);
 
-        assertThat(testList, is(testList));
+        assertThat(resultList, is(testList));
 
     }
 
